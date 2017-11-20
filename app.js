@@ -3,9 +3,12 @@ const app = express()
 
 // Build Your Route Here
 app.get('/', function(req, resp){
+  resp.render("index", {
+    name: "Nick"'
+    school: "Flatiron School"'
+  })
 
-
-  resp.send(`Hello, World!`)
+  
 })
 
 module.exports = app
